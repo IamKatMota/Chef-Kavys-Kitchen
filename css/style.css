@@ -1,5 +1,7 @@
 /* Box Model Hack */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -45,7 +47,6 @@ header{
 
 .homepage h1,
 header{
-    padding: 1rem;
     font-size: 2.5rem;
 }
 
@@ -53,6 +54,9 @@ header{
     background-color: white;
     border: none;
     padding: 1rem;
+}
+.buttonbg:active {
+    background-color: rgb(217, 214, 214);
 }
 a:hover{
     background-color: rgb(241, 189, 134);
@@ -71,8 +75,8 @@ header {
 }
 
 .transparentBox {
-    background-color: rgba(201, 201, 201, 0.5);
-    padding: 10px;
+    background-color: rgba(201, 201, 201, 0.498);
+    padding: 30px;
     }
 
 .header {
