@@ -1,44 +1,103 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Chef Kavy's Kitchen</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chef Kavy's Kitchen</title>
+	<!--Icons-->
+	<script src="https://kit.fontawesome.com/76b8efdf2f.js" crossorigin="anonymous"></script>
+	<!--Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+	<!--Stylesheet-->
+	<link rel="stylesheet" href="style.css">
+</head>
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Chef Kavy's Kitchen</h1>
-						
-						<div class = mainButton>
-							<a href="/main-pages/index.html" class="buttonbg"
-							<button>
-								Come In
-							</button>
-						</a>
-						</div>
+<body>
+	
+		
+			<nav class="menu">
+				<i class="fa-solid fa-bars fa-2x " id="hamburger"></i>
+
+				<div id="overlay"></div>
+				<div id="sidebar">
+					<header class="major">
+						<h2>Menu</h2>
 					</header>
+					
+					<ul class="nav">
+						<li><a href="#">Homepage</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">About Me</a></li>
+						<li><a href="#">Contact Me</a></li>	
+					</ul>
+
+					<section>
+						<header class="major">
+							<h2>Get in touch</h2>
+						</header>
+						<ul class="contact">
+							<li><i class="icons fa-brands fa-instagram fa-xl" style="color: #f1bd86;"></i><a href="#">Instagram</a></li>
+							<li><i class="icons fa-regular fa-envelope fa-lg" style="color: #f1bd86;"></i>info@untitles.com</li>
+							<li><i class="icons fa-solid fa-phone fa-lg" style="color: #f1bd86;"></i>(000) 000-000</li>
+							<li> <i class="icons fa-solid fa-map-pin fa-lg" style="color: #f1bd86;"></i>1234 Somewhere</li>
+							<li class="address"> Los Angeles, CA 0000</li>
+						</ul>
+					</section>
+				</div>
+			</nav>
+
+			<main>
+				<header>
+					<h1><a href="index.html">Chef Kavy's Kitchen</a></h1>
+				</header>
+
+				<section class="title">
+					<h2>LA's Premier Chef & Caterer</h2>
+				</section>
+
+				<section class="intro">
+					<p>
+						Welcome to Chef Kavy’s Kitchen, where each dish is a celebration of flavor and each event a showcase of culinary mastery. Chef Kavy has not only catered to the stars like Nipsey Hussle, Snoop Dogg, Wiz Khalifa, Niecy Nash, Brandy, and H.E.R., but he has also brought his exceptional culinary skills to a variety of settings, from intimate dinners to large-scale events.
+
+					</p>
+					<div class="slideshow">
+						<img src="images/fulls/01.jpg" alt="">
+						<img src="images/fulls/02.jpg" alt="">
+						<img src="images/fulls/03.jpg" alt="">
+						<img src="images/fulls/04.jpg" alt="">
+						<img src="images/fulls/05.jpg" alt="">
+						<img src="images/fulls/06.jpg" alt="">
+						<img src="images/fulls/07.jpg" alt="">
+						<img src="images/fulls/09.jpg" alt="">
+						<img src="images/fulls/10.jpg" alt="">
+						<img src="images/fulls/11.jpg" alt="">
+						<img src="images/fulls/12.jpg" alt="">
+					</div>
+				<div class="dot-container">
+					<div class="navigation-button">
+						<span class="dot active" onclick="changeSlide(0)"></span>
+						<span class="dot" onclick="changeSlide(1)"></span>
+						<span class="dot" onclick="changeSlide(2)"></span>
+						<span class="dot" onclick="changeSlide(3)"></span>
+						<span class="dot" onclick="changeSlide(4)"></span>
+						<span class="dot" onclick="changeSlide(5)"></span>
+						<span class="dot" onclick="changeSlide(6)"></span>
+						<span class="dot" onclick="changeSlide(7)"></span>
+						<span class="dot" onclick="changeSlide(8)"></span>
+						<span class="dot" onclick="changeSlide(9)"></span>
+						<span class="dot" onclick="changeSlide(10)"></span>
+					</div>
+
+					</div>
+				</section>
 
 				
+			</main>
+	
 
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+	<script src="main.js"></script>
+</body>
+
 </html>
