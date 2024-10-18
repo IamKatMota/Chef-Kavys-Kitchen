@@ -36,8 +36,7 @@ overlay.addEventListener('click', function(){
 })
 
 //SLIDESHOW
-let imgs = document.querySelector('.slideshow img');
-let dots = document.querySelector('.dot');
+let imgs = document.querySelectorAll('.slideshow img');
 let currentImg = 0; //index of first img
 const interval = 3000; //duration of the slide
 
@@ -47,7 +46,7 @@ let timer = setInterval(changeSlide, interval);
 function changeSlide(n) {
     for (var i = 0; i < imgs.length; i++) {
       imgs[i].style.opacity = 0;
-      dots[i].className = dots[i].className.replace(' active', '');
+      
     }
 
     currentImg = (currentImg + 1) % imgs.length;
@@ -59,5 +58,4 @@ function changeSlide(n) {
     }
 
     imgs[currentImg].style.opacity = 1;
-    dots[currentImg].className += ' active';
   }
