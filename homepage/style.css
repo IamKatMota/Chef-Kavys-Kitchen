@@ -49,6 +49,7 @@ main header {
 }
 
 .intro {         
+    display: grid;
     color: white;
     padding: 20px;
     width: 50%;
@@ -56,7 +57,7 @@ main header {
 }
 
 .intro p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 2%;
     width: 100%;
     padding-top:15% ;
@@ -79,7 +80,7 @@ button,
 
 /* Sidebar Styles */
 #hamburger {
-    margin: 1rem 1rem 0 0;
+    margin: 1rem 2rem 0 0;
     cursor: pointer;
     z-index: 2;
 }
@@ -104,6 +105,7 @@ i.icons {
     position: fixed;
     top: 0;
     right: 0;
+
 }
 
 #sidebar ul {
@@ -172,6 +174,7 @@ section .major {
 .slideshow img {
     width: 100%;
     height: auto;
+    padding: 0 20px 0 20px;
     object-fit: cover;
     position: absolute;
     top: 50%;
@@ -291,6 +294,8 @@ section .major {
 }
 
 button {
+    display: flex;
+    justify-content: center;
     width: 100%;
     padding: 10px;
     background-color: rgb(112, 193, 179);
@@ -301,9 +306,13 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
+
 }
 
 button:hover {
     background-color: rgb(241, 189, 134);
     transition: 0.7s;
+}
+.fa-arrow-right{
+    padding-left: 10px;
 }
