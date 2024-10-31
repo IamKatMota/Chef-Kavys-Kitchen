@@ -9,27 +9,32 @@
 html, body {
     height: 100%;
     width: 100%;
-    background: linear-gradient(rgb(43, 65, 98), rgb(104, 148, 169));
+    background: linear-gradient(rgb(17, 51, 103), rgb(155, 168, 175));
 }
 
 html, a {
-    font-family: "Francois One", sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-weight: 400;
     font-style: normal;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-
 h1 {
-    font-size: 20px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: fit-content;
 }
-h1:hover {
-
+h1 a {
+    color: rgb(43, 65, 98);
+    font-size: 20px;
+    font-family: "Francois One", sans-serif;
+    font-weight: 400;
+}
+h1:hover {/* Smooth transition for hover effects and lifts the box a bit on hover*/
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     transform: translateY(-10px);
 }
 
 main header {
+    background-color: white;
     padding: 20px;
 }
 
@@ -47,28 +52,28 @@ main header {
     padding-left: 40px;
     padding-top: 25%;
 }
-
-.intro {         
+.content{
     display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.intro {      
+    display: flex;  
+    flex-wrap: wrap; 
     color: white;
-    padding: 20px;
-    width: 50%;
-    height: 100vh;
+    padding: 50% 5% 0 10%;
+
 }
 
 .intro p {
+    display: flex;
     font-size: 1.5rem;
-    margin: 2%;
-    width: 100%;
-    padding-top:15% ;
+}
+.p2{
+    padding-top: 5%;
 }
 
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
+
 
 #sidebar a,
 .service-box h3,
@@ -83,11 +88,18 @@ button,
     margin: 1rem 2rem 0 0;
     cursor: pointer;
     z-index: 2;
+    color: rgb(178, 178, 178);
+}
+#hamburger:hover{
+    color:rgb(244, 209, 174);
 }
 
 i.icons {
     margin-right: 1rem;
     overflow: visible;
+}
+.fa-map-pin{
+    padding-left: 5px;
 }
 
 #sidebar {
@@ -134,7 +146,7 @@ ul.nav {
 }
 
 .contact {
-    padding-left: 3rem;
+    padding-left: 2rem;
 }
 
 section .major {
@@ -162,12 +174,8 @@ section .major {
 
 /* Slideshow Styles */
 .slideshow {
-    width: 50%;
     height: 100vh;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
 }
 
@@ -207,6 +215,14 @@ section .major {
         font-size: 1.5rem;
     }
 }
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+    .content {
+      grid-template-columns: 1fr; /* Stacks items in a single column */
+    }
+    .intro{
+        padding: 10% 10% 0 10%;
+    }
+  }
 
 /*Services*/
 
@@ -251,15 +267,13 @@ section .major {
 /*Contact me*/
 /* Contact Section Styles */
 .contact-me {
-    display: flex;
-    justify-content: center;
-    min-height: 80vh; /* Full viewport height */
+padding: 100px 20% 20% 20%;
+    min-height: 70vh; /* Full viewport height */
 }
 
 .contact-form {
     width: 100%; /* Full width on smaller screens */
     max-width: 500px; /* Optimal reading width */
-    padding: 40px;
     background: #ffffff;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Soft shadow for 3D effect */
     border-radius: 10px;
@@ -298,7 +312,7 @@ button {
     justify-content: center;
     width: 100%;
     padding: 10px;
-    background-color: rgb(112, 193, 179);
+    background-color: rgb(43, 65, 98);
     transition: 0.7s;
     color: white;
     font-size: 1.1rem; /* Slightly larger font for button */
