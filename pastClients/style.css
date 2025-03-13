@@ -52,27 +52,14 @@
 }
 
 /*media queries*/
-@media screen and (max-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr); /* Forces two per row */
-    }
-    .grid-box img {
-        width: 100%;
-        height: auto; 
-        max-height: 200px; 
-        object-fit: contain;
-    }
-}
 
-/* For very small screens */
 @media screen and (max-width: 480px) {
     .grid {
-        grid-template-columns: 1fr; /* Switch to one per row if too small */
+        grid-template-columns: repeat(2, 1fr); /* Switch to one per row if too small */
     }
     .grid-box img {
         width: 100%;
-        height: auto; 
         max-height: 200px; 
-        object-fit: contain; 
+        object-fit: cover; 
     }
 }
