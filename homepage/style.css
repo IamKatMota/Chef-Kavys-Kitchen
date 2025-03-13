@@ -210,61 +210,56 @@ section .major {
     top: 50;
     left: 50;
     opacity: 0;
-    animation: imageAnimation 70s linear infinite 0s;
+    animation: imageAnimation 54s linear infinite 0s;
 }
 
 .slideshow li:nth-child(1) span {
-    background-image: url("../homepage/images/fulls/01.jpg");
-    background-position: center 20%;
+    background-image: url("../homepage/images/fulls/02.jpg");
 }
 
 .slideshow li:nth-child(2) span {
-    background-image: url("../homepage/images/fulls/02.jpg");
+    background-image: url("../homepage/images/fulls/03.jpg");
+    background-position: center 30%;
     animation-delay: 6s;
 } 
 
 .slideshow li:nth-child(3) span {
-    background-image: url("../homepage/images/fulls/03.jpg");
-    background-position: center 30%;
+    background-image: url("../homepage/images/fulls/04.jpg");
     animation-delay: 12s;
 }
 
 .slideshow li:nth-child(4) span {
-    background-image: url("../homepage/images/fulls/04.jpg");
+    background-image: url("../homepage/images/fulls/05.jpg");
+    background-position: center -300px;
     animation-delay: 18s;
 }
 
 .slideshow li:nth-child(5) span {
-    background-image: url("../homepage/images/fulls/05.jpg");
-    background-position: center -300px;
+    background-image: url("../homepage/images/fulls/06.jpg");
     animation-delay: 24s;
 }
 .slideshow li:nth-child(6) span {
-    background-image: url("../homepage/images/fulls/06.jpg");
+    background-image: url("../homepage/images/fulls/07.jpg");
+    background-position: center -5px;
     animation-delay: 30s;
 }
 .slideshow li:nth-child(7) span {
-    background-image: url("../homepage/images/fulls/07.jpg");
-    background-position: center -5px;
+    background-image: url("../homepage/images/fulls/09.jpg");
     animation-delay: 36s;
 }
 .slideshow li:nth-child(8) span {
-    background-image: url("../homepage/images/fulls/09.jpg");
+    background-image: url("../homepage/images/fulls/10.jpg");
+    background-position: center -5px;
     animation-delay: 42s;
 } 
 .slideshow li:nth-child(9) span {
-    background-image: url("../homepage/images/fulls/10.jpg");
-    background-position: center -5px;
-    animation-delay: 50s;
+    background-image: url("../homepage/images/fulls/11.jpg");
+    animation-delay: 48s;
 }
 .slideshow li:nth-child(10) span {
-    background-image: url("../homepage/images/fulls/11.jpg");
-    animation-delay: 64s;
-}
-.slideshow li:nth-child(11) span {
     background-image: url("../homepage/images/fulls/12.jpg");
     background-position: center 20% ;
-    animation-delay: 72s;
+    animation-delay: 54s;
 }
 
 
