@@ -741,7 +741,7 @@ a:visited {
 		}
 
 		#bg {
-			background-size: 100%;
+			background-size: contain;
 			position:absolute;
 			background-repeat: repeat-x;
 		}
@@ -829,7 +829,7 @@ a:visited {
 		}
 
 		#bg {
-			background-size: 100%;
+			background-size: contain;
 			position:absolute;
 			background-repeat: repeat-x;
 		}
