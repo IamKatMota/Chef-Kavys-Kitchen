@@ -134,6 +134,7 @@ input, select, textarea {
 .buttonbg {
     background-color: rgb(43, 65, 98);
 	border: none;
+	color: white 
 	padding: .5rem 2rem ;
 	box-shadow: 2px 2px 4px rgba(45, 65, 98, 0.847);
 }
