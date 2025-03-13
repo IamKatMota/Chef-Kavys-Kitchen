@@ -738,8 +738,8 @@ a:visited {
 		}
 
 		#bg {
-			background-size: 100%;
-			width: 900px;
+			background-size: contain;
+    background-repeat: repeat;
 		}
 
 	/* Header */
