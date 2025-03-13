@@ -297,6 +297,7 @@ a:visited {
 	#bg {
 		background-size: 100% auto;
 		width: 6750px;
+		background-repeat: repeat;
 	}
 
 /* Overlay */
@@ -572,6 +573,7 @@ a:visited {
 		#bg {
 			background-size: 1500px auto;
 			width: 4500px;
+			background-repeat: repeat;
 		} }
 
 /* Normal */
@@ -654,6 +656,7 @@ a:visited {
 		#bg {
 			background-size: 750px auto;
 			width: 2250px;
+			background-repeat: repeat;
 		} }
 
 /* Mobile */
@@ -740,6 +743,7 @@ a:visited {
 		#bg {
 			background-size: 100%;
 			width: 900px;
+			background-repeat: repeat;
 		}
 
 	/* Header */
