@@ -130,7 +130,9 @@ input, select, textarea {
     text-align: center; 
     margin-top: 10%;
 }
-
+button {
+	color: white;
+}
 .buttonbg {
     background-color: rgb(43, 65, 98);
 	border: none;
