@@ -295,8 +295,8 @@ a:visited {
 	}
 
 	#bg {
-		background-size: 100% auto;
-		width: 6750px;
+		background-size: contain;
+    background-repeat: repeat;
 	}
 
 /* Overlay */
@@ -570,8 +570,8 @@ a:visited {
 		}
 
 		#bg {
-			background-size: 1500px auto;
-			width: 4500px;
+			background-size: contain;
+    background-repeat: repeat;
 		} }
 
 /* Normal */
@@ -652,8 +652,8 @@ a:visited {
 		}
 
 		#bg {
-			background-size: 750px auto;
-			width: 2250px;
+			background-size: contain;
+    background-repeat: repeat;
 		} }
 
 /* Mobile */
@@ -825,7 +825,7 @@ a:visited {
 		}
 
 		#bg {
-			background-size: cover;
-			width: 100%;
+			background-size: contain;
+    background-repeat: repeat;
 		}
- }
+ }}
