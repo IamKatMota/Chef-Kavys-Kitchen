@@ -149,23 +149,21 @@
 
 <!--Contact Me-->
 <section class="contact-me">
-    <form action=" " class="contact">
+    <form action="https://api.web3forms.com/submit" method="POST" id = "form" class="contact">
         <div class="contact-title">
-            <h2>
-                Get in touch
-            </h2>
+            <h2>Get in touch</h2>
         </div>
-        <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
-        <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+        <input type="hidden" name="access_key" value="e61500b5-4a2b-4d4d-93bc-6b8100a075ce">
+        <input type="text" name="name" placeholder="Your Name" class="contact-input" required />
+        <input type="email" name="email" placeholder="Your Email" class="contact-input" required />
         <textarea name="message" placeholder="Your Message" class="contact-textarea" required></textarea>
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         <button type="submit">
-            <div>
-                Submit
-            </div>
+            <div>Submit</div>
             <div class="fa-solid fa-arrow-right"></div>
         </button>
+        <div id="result"></div>
     </form>
-
 </section>
 </main>
 
