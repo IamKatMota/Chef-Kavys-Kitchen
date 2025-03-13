@@ -1,47 +1,59 @@
-/*Main Styles*/
+/* Main Styles */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    cursor: default;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
-    background: linear-gradient(rgb(17, 51, 103), rgb(155, 168, 175));
+    background: rgb(155, 168, 175);
 }
 
-html, a {
-    font-family:'Times New Roman', Times, serif;
+html,
+a {
+    font-family: "Times New Roman", Times, serif;
     font-weight: 400;
     font-style: normal;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
+
 h1 {
     width: fit-content;
 }
+
 h1 a {
     color: rgb(43, 65, 98);
     font-size: 20px;
     font-family: "Francois One", sans-serif;
     font-weight: 400;
 }
-h1:hover {/* Smooth transition for hover effects and lifts the box a bit on hover*/
+
+h1:hover {
+    /* Smooth transition for hover effects and lifts the box a bit on hover*/
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     transform: translateY(-10px);
 }
 
 main header {
+    display: flex;
     background-color: white;
     padding: 20px;
 }
 
+header img {
+    width: 3rem;
+}
+
 .title {
     min-height: 100vh;
-    background-image: url('images/fulls/08.jpg');
-    background-size: cover;    
+    background-image: url("images/fulls/08.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -52,28 +64,27 @@ main header {
     padding-left: 40px;
     padding-top: 25%;
 }
-.content{
+
+.content {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-.intro {      
-    display: flex;  
-    flex-wrap: wrap; 
+.intro {
+    display: flex;
+    flex-wrap: wrap;
     color: white;
-    padding: 50% 5% 0 10%;
-
+    padding: 30% 10% 30% 10%;
 }
 
 .intro p {
     display: flex;
     font-size: 1.5rem;
 }
-.p2{
+
+.p2 {
     padding-top: 5%;
 }
-
-
 
 #sidebar a,
 .service-box h3,
@@ -90,15 +101,17 @@ button,
     z-index: 2;
     color: rgb(178, 178, 178);
 }
-#hamburger:hover{
-    color:rgb(244, 209, 174);
+
+#hamburger:hover {
+    color: rgb(244, 209, 174);
 }
 
 i.icons {
     margin-right: 1rem;
     overflow: visible;
 }
-.fa-map-pin{
+
+.fa-map-pin {
     padding-left: 5px;
 }
 
@@ -107,17 +120,17 @@ i.icons {
     height: 100vh;
     color: rgb(43, 65, 98);
     background-color: rgb(247, 247, 247);
-    z-index: 2; 
+    z-index: 2;
     overflow: hidden;
-    transition: width .5s ease;
-    white-space: nowrap; 
+    transition: width 0.5s ease;
+    white-space: nowrap;
 }
 
-#hamburger, #sidebar {
+#hamburger,
+#sidebar {
     position: fixed;
     top: 0;
     right: 0;
-
 }
 
 #sidebar ul {
@@ -132,7 +145,8 @@ i.icons {
     line-height: 2rem;
 }
 
-.address, .major {
+.address,
+.major {
     padding-left: 1.5rem;
 }
 
@@ -164,7 +178,7 @@ section .major {
 #overlay {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
     left: 0;
@@ -174,40 +188,120 @@ section .major {
 
 /* Slideshow Styles */
 .slideshow {
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-
-.slideshow img {
+    list-style-type: none;
     width: 100%;
-    height: auto;
-    padding: 0 20px 0 20px;
-    object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 1s ease-in-out;
-}
-
-.slideshow img:first-child {
-    z-index: 1;
-}
-
-.navigation-button {
-    text-align: center;
+    /* Takes up half of the container */
+    height: 600px;
+    /* Adjust as needed */
     position: relative;
+    /* Ensures proper placement */
+    overflow: hidden;
+    /* Prevents overflow issues */
 }
+
+/* Ensure slideshow images fit */
+.slideshow li span {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50;
+    left: 50;
+    opacity: 0;
+    animation: imageAnimation 70s linear infinite 0s;
+}
+
+.slideshow li:nth-child(1) span {
+    background-image: url("../homepage/images/fulls/01.jpg");
+    background-position: center 20%;
+}
+
+.slideshow li:nth-child(2) span {
+    background-image: url("../homepage/images/fulls/02.jpg");
+    animation-delay: 6s;
+} 
+
+.slideshow li:nth-child(3) span {
+    background-image: url("../homepage/images/fulls/03.jpg");
+    background-position: center 30%;
+    animation-delay: 12s;
+}
+
+.slideshow li:nth-child(4) span {
+    background-image: url("../homepage/images/fulls/04.jpg");
+    animation-delay: 18s;
+}
+
+.slideshow li:nth-child(5) span {
+    background-image: url("../homepage/images/fulls/05.jpg");
+    background-position: center -300px;
+    animation-delay: 24s;
+}
+.slideshow li:nth-child(6) span {
+    background-image: url("../homepage/images/fulls/06.jpg");
+    animation-delay: 30s;
+}
+.slideshow li:nth-child(7) span {
+    background-image: url("../homepage/images/fulls/07.jpg");
+    background-position: center -5px;
+    animation-delay: 36s;
+}
+.slideshow li:nth-child(8) span {
+    background-image: url("../homepage/images/fulls/09.jpg");
+    animation-delay: 42s;
+} 
+.slideshow li:nth-child(9) span {
+    background-image: url("../homepage/images/fulls/10.jpg");
+    background-position: center -5px;
+    animation-delay: 50s;
+}
+.slideshow li:nth-child(10) span {
+    background-image: url("../homepage/images/fulls/11.jpg");
+    animation-delay: 64s;
+}
+.slideshow li:nth-child(11) span {
+    background-image: url("../homepage/images/fulls/12.jpg");
+    background-position: center 20% ;
+    animation-delay: 72s;
+}
+
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+    8% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+
+    17% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 
 /* Media Queries for Responsive Adjustments */
 @media (max-width: 768px) {
-    .title h2{
+    .title h2 {
         font-size: 2.5rem;
         padding-left: 20px;
     }
 
-    .intro, .slideshow {
+    .intro,
+    .slideshow {
         width: 100%;
     }
 
@@ -215,14 +309,19 @@ section .major {
         font-size: 1.5rem;
     }
 }
-@media (max-width: 768px) { /* Adjust the max-width as needed */
+
+@media (max-width: 768px) {
+
+    /* Adjust the max-width as needed */
     .content {
-      grid-template-columns: 1fr; /* Stacks items in a single column */
+        grid-template-columns: 1fr;
+        /* Stacks items in a single column */
     }
-    .intro{
+
+    .intro {
         padding: 10% 10% 0 10%;
     }
-  }
+}
 
 /*Services*/
 
@@ -236,75 +335,96 @@ section .major {
     background-color: white;
 }
 
-.services-section h2{
+.services-section h2 {
     display: flex;
     justify-content: center;
     background-color: white;
     font-size: 2.5rem;
     padding: 20px;
 }
+
 .service-box {
     flex: 1 1 30%;
     background-color: white;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
-    text-align: center; /* Centers the text inside the box */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Smooth transition for hover effects */
+    text-align: center;
+    /* Centers the text inside the box */
 }
 
 .service-box:hover {
-    transform: translateY(-10px); /*lifts the box a bit on hover*/
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transform: translateY(-10px);
+    /*lifts the box a bit on hover*/
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-
 
 .service-box p {
-    color: rgb(102, 102, 102); /* Lighter text color for the description */
+    color: rgb(102, 102, 102);
+    /* Lighter text color for the description */
 }
-
 
 /*Contact me*/
 /* Contact Section Styles */
 .contact-me {
-padding: 100px 20% 20% 20%;
-    min-height: 70vh; /* Full viewport height */
+    padding: 100px 20% 20% 20%;
+    min-height: 70vh;
+    /* Full viewport height */
 }
 
 .contact-form {
-    width: 100%; /* Full width on smaller screens */
-    max-width: 500px; /* Optimal reading width */
+    width: 100%;
+    /* Full width on smaller screens */
+    max-width: 500px;
+    /* Optimal reading width */
     background: #ffffff;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Soft shadow for 3D effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for 3D effect */
     border-radius: 10px;
-    margin: auto; /* Centers the form vertically and horizontally */
+    margin: auto;
+    /* Centers the form vertically and horizontally */
 }
 
 .contact-title h2 {
-    font-size: 2.4rem; /* Larger font size for emphasis */
+    font-size: 2.4rem;
+    /* Larger font size for emphasis */
     color: white;
-    margin-bottom: 1rem; /* 16px bottom margin */
+    margin-bottom: 1rem;
+    /* 16px bottom margin */
     text-align: center;
     border-bottom: 1px solid black;
 }
 
-.contact-input, .contact-textarea {
+.contact-input,
+.contact-textarea {
     width: 100%;
-    padding: 12px 15px; /* Sufficient padding for easy interaction */
-    margin-bottom: 15px; /* Uniform margin for clean spacing */
-    border: 2px solid #ddd; /* Subtle border */
-    border-radius: 8px; /* Modern rounded corners */
-    font-size: 1rem; /* Adequate font size for readability */
-    transition: border-color 0.3s; /* Smooth transition for interactive elements */
+    padding: 12px 15px;
+    /* Sufficient padding for easy interaction */
+    margin-bottom: 15px;
+    /* Uniform margin for clean spacing */
+    border: 2px solid #ddd;
+    /* Subtle border */
+    border-radius: 8px;
+    /* Modern rounded corners */
+    font-size: 1rem;
+    /* Adequate font size for readability */
+    transition: border-color 0.3s;
+    /* Smooth transition for interactive elements */
 }
 
-.contact-input:focus, .contact-textarea:focus {
-    border-color: #0056b3; /* Highlight color when focused */
+.contact-input:focus,
+.contact-textarea:focus {
+    border-color: #0056b3;
+    /* Highlight color when focused */
 }
 
 .contact-textarea {
-    height: 120px; /* Adjusted for textual input space */
-    resize: vertical; /* Allows resizing only vertically */
+    height: 120px;
+    /* Adjusted for textual input space */
+    resize: vertical;
+    /* Allows resizing only vertically */
 }
 
 button {
@@ -315,18 +435,106 @@ button {
     background-color: rgb(43, 65, 98);
     transition: 0.7s;
     color: white;
-    font-size: 1.1rem; /* Slightly larger font for button */
+    font-size: 1.1rem;
+    /* Slightly larger font for button */
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
-
 }
 
 button:hover {
     background-color: rgb(241, 189, 134);
     transition: 0.7s;
 }
-.fa-arrow-right{
+
+.fa-arrow-right {
     padding-left: 10px;
+}
+
+/* ABOUT HTML */
+
+/* --- About Me Section --- */
+.about-me {
+    background-color: #f8f8f8;
+    /* Light gray background for a soft, clean look */
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* --- About Me Text --- */
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+    color: #2b4162;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #2b4162;
+    margin-bottom: 20px;
+    font-family: "Francois One", sans-serif;
+    text-transform: uppercase;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* --- About Me Image --- */
+.about-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* Soft rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
 }

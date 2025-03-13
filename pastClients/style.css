@@ -1,0 +1,52 @@
+/* Clients Section */
+.clients {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between boxes */
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Individual Client Box */
+.grid-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for floating effect */
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-box:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Client Images */
+.grid-box img {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures uniform image sizing without distortion */
+    border-radius: 8px;
+}
+
+/* Targeting Nick Young's image */
+.grid-box img[alt="Swaggy P"] {
+    object-position: center top; /* Moves the image downward */
+}
+
+/* Client Name */
+.grid-box span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(43, 65, 98);
+}
