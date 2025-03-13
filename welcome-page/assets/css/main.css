@@ -131,12 +131,12 @@ input, select, textarea {
     margin-top: 10%;
 }
 button {
-	color: white;
+	color: white !important;
 }
 .buttonbg {
     background-color: rgb(43, 65, 98);
 	border: none;
-	color: white;
+	color: white !important;
 	padding: .5rem 2rem ;
 	box-shadow: 2px 2px 4px rgba(45, 65, 98, 0.847);
 }
@@ -148,7 +148,7 @@ a:hover{
     transition: 0.7s;
 }
 a:visited {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
     text-decoration: none;
 }
 
