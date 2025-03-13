@@ -130,13 +130,12 @@ input, select, textarea {
     text-align: center; 
     margin-top: 10%;
 }
-button {
-	color: white !important;
+.buttonbg a {
+	color: white; 
 }
 .buttonbg {
     background-color: rgb(43, 65, 98);
 	border: none;
-	color: white !important;
 	padding: .5rem 2rem ;
 	box-shadow: 2px 2px 4px rgba(45, 65, 98, 0.847);
 }
