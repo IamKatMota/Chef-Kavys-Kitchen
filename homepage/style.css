@@ -308,13 +308,14 @@ section .major {
         padding: 10% 10% 0 10%;
     }
     .services {
-        min-height: 80vh; /* Make section larger on mobile */
-        flex-direction: column;
-        align-items: center;
+        min-height: 80vh;
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px
     }
 
     .service-box {
-        width: 90%; /* Ensure proper spacing */
+        width: 100%; /* Ensure proper spacing */
     }
 }
 
