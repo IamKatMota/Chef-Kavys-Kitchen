@@ -134,18 +134,18 @@ input, select, textarea {
 .buttonbg {
     background-color: rgb(43, 65, 98);
 	border: none;
-	color: white 
+	color: white;
 	padding: .5rem 2rem ;
 	box-shadow: 2px 2px 4px rgba(45, 65, 98, 0.847);
 }
 .buttonbg:active {
     background-color: rgb(217, 214, 214);
 }
-.buttonbg:hover{
+a:hover{
     background-color: rgb(241, 189, 134);
     transition: 0.7s;
 }
-.buttonbg:visited {
+a:visited {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
