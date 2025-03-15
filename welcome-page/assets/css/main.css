@@ -51,7 +51,7 @@ body {
 			transition: none !important;
 		}
 
-	body, input, select, textarea {
+	h1 {
 		color: rgb(244, 209, 174);
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 15pt;
