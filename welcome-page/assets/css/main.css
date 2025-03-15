@@ -84,7 +84,7 @@ body {
     margin-top: 10%;
 }
 .buttonbg a {
-	color: white; 
+	color: white !important; 
 }
 .buttonbg {
     background-color: rgb(43, 65, 98);
