@@ -85,6 +85,7 @@ body {
 }
 .buttonbg a {
 	color: white !important; 
+	-webkit-text-fill-color: white !important;
 }
 .buttonbg {
     background-color: rgb(43, 65, 98);
@@ -617,6 +618,10 @@ a:visited {
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
+		.buttonbg a {
+			color: white !important;
+			-webkit-text-fill-color: white !important;
+		}
 
 		/* Basic */
 
